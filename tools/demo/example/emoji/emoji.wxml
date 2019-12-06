@@ -1,0 +1,35 @@
+<view class="reply_wrp">
+  <view class="reply_tool">
+    <view hover-class="active" class="reply_button replay_quick_button">
+      <image src="./images/reply_tool_keyboard.svg" mode='aspectFit' class="reply_tool_pic"></image>
+    </view>
+    <view class="reply_form_wrp">
+      <label for="" class="reply_label">
+        <input class="reply_input" cursor-spacing="8px" confirm-type="send" confirm-hold value="{{comment}}" cursor="{{cursor}}" focus="{{focus}}" bindblur="onBlur" bindfocus="onFocus" bindinput="onInput" bindconfirm="onConfirm" />
+      </label>
+    </view>
+    <view hover-class="active" class="reply_button replay_emotion_button" bindtap="showEmoji">
+      <image src="./images/reply_tool_emoji.svg" mode='aspectFit' class="reply_tool_pic"></image>
+    </view>
+    <view hover-class="active" class="reply_button replay_media_button" bindtap="showFunction">
+      <image src="./images/reply_tool_add.png" mode='aspectFit' class="reply_tool_pic"></image>
+    </view>
+  </view>
+  <view class="reply_panel_wrp" hidden="{{!emojiShow && !functionShow}}">
+    <view class="reply_panel {{emojiShow ? 'show': ''}}" hidden="{{!emojiShow}}">
+      <!-- 这里放emoji_area -->
+      <mp-emoji bindinsertemoji="insertEmoji" binddelemoji="deleteEmoji"></mp-emoji>
+    </view>
+    <view class="reply_panel {{functionShow ? 'show': ''}}" hidden="{{!functionShow}}">
+      <swiper indicator-dots="{{true}}" indicator-color="#bbbbbb" indicator-active-color="#8c8c8c">
+        <swiper-item>
+          <view class="function_list">
+            <view class="function_item" bindtap="chooseImage">
+              <image src="./images/reply_function_image.svg" class="reply_function_pic"></image>
+            </view>
+          </view>
+        </swiper-item>
+      </swiper>
+    </view>
+  </view>
+</view>

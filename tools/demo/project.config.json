@@ -1,0 +1,41 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"nodeModules": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.9.4",
+	"appid": "wxe0b5580bba739b69",
+	"projectname": "小程序拓展组件库",
+	"isGameTourist": false,
+	"condition": {
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "example/video-swiper/video-swiper",
+					"pathName": "example/video-swiper/video-swiper"
+				},
+				{
+					"id": -2,
+					"name": "example/emoji/emoji",
+					"pathName": "example/emoji/emoji"
+				},
+				{
+					"id": -3,
+					"name": "example/index-list/index-list",
+					"pathName": "example/index-list/index-list"
+				}
+			]
+		}
+	}
+}

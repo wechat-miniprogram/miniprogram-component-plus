@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "video-swiper": "./video-swiper/index",
+    "emoji": "./emoji/index",
+    "index-list": "./index-list/index"
+
+  }
+}

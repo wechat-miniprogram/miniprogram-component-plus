@@ -1,0 +1,16 @@
+{
+  "name": "@miniprogram-component-plus/video-swiper",
+  "version": "1.0.1",
+  "description": "",
+  "main": "miniprogram_dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "video",
+    "swiper",
+    "miniprogram"
+  ],
+  "author": "sanfordsun",
+  "license": "ISC"
+}

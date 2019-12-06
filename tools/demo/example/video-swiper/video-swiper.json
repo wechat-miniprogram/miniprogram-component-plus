@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "mp-video-swiper": "../../components/video-swiper/index"
+  }
+}

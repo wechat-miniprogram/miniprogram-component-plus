@@ -1,0 +1,11 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "@tencent/tslint-config-wxapp"
+    ],
+    "rules": {
+        "trailing-comma": 0
+    },
+    "jsRules": {},
+    "rulesDirectory": []
+}

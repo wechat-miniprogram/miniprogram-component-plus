@@ -1,0 +1,25 @@
+<!--components/emoji/emoji.wxml-->
+
+<view class='emoji_area' style="height: {{height}}px">
+  <view class="emotion_list" style="padding: 0 {{extraPadding}}px">
+    <view hidden="{{!showHistory || history.length === 0}}">
+      <view style="padding-left: 5px">最近使用</view>
+      <block wx:for="{{history}}" wx:key="*this">
+        <view class="emotion_item" data-idx="{{item}}" bindtap="insertEmoji">
+          <view class="icon_emotion {{emotions[item].style}}" style="background-image: url({{emojiPicture}})"></view>
+        </view>
+      </block>
+    </view>
+   
+    <view style="padding-left: 5px">所有表情</view>
+      <!-- 图片30px，每个宽度40px -->
+      <block wx:for="{{emotions}}" wx:key="*this">
+        <view class="emotion_item" data-idx="{{index}}" bindtap="insertEmoji">
+          <view class="icon_emotion {{item.style}}" style="background-image: url({{emojiPicture}})"></view>
+        </view>
+      </block>
+      <view wx:if="{{showDel}}" class="emotion_item" bindtap="deleteEmoji">
+      <view class="icon_emotion_del" style="background-image: url({{emojiPicture}})"></view> 
+    </view>
+  </view>
+</view>
