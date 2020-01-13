@@ -1,19 +1,28 @@
-<view class="tabs">
-  <view class="tabs-bar__wrp">
+<view class="weui-tabs">
+  <view class="weui-tabs-bar__wrp">
     <scroll-view
       scroll-x
-      scroll-into-view="{{}}"
+      scroll-into-view="item_{{currentView}}"
       scroll-with-animation="{{animation}}"
     >
-      <block wx:for="{{tabs}}" wx:key="title">
-        <view id="item_{{index}}" class="tabs-bar__item {{tabClass}}">
-          <view class="tabs-cbar__title {{activeTab === index ? activeClass : ''}}">
-            <text class="">{{item.title}}</text>
+      <view class="weui-tabs-bar__content">
+        <block wx:for="{{tabs}}" wx:key="title">
+          <view
+            id="item_{{index}}" 
+            class="weui-tabs-bar__item {{tabClass}}"
+            style="background-color: {{tabBackgroundColor}}; color: {{activeTab === index ? tabActiveTextColor : tabInactiveTextColor}}; border-bottom-color: {{activeTab === index ? tabUnderlineColor : 'transparent'}}"
+            bindtap="handleTabClick"
+            data-index="{{index}}"
+          >
+            <view class="weui-tabs-bar__title {{activeTab === index ? activeClass : ''}}">
+              <text class="">{{item.title}}</text>
+            </view>
           </view>
-        </view>
-      </block>
+        </block>
+      </view>
+      
     </scroll-view>
   </view>
-  <view class="tabs-content__wrp">
+  <view class="weui-tabs-content__wrp">
   </view>
 </view>

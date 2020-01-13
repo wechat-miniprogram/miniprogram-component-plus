@@ -3,8 +3,8 @@
     "example/index",
     "example/video-swiper/video-swiper",
     "example/emoji/emoji",
-    "example/index-list/index-list"
-
+    "example/index-list/index-list",
+    "example/tabs/tabs"
   ],
   "window": {
     "navigationBarTextStyle": "black",

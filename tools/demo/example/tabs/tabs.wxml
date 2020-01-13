@@ -1,0 +1,1 @@
+<mp-tabs tabs="{{tabs}}" animation activeTab="{{activeTab}}"></mp-tabs>

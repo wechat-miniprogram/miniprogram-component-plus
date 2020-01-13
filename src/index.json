@@ -2,7 +2,7 @@
   "usingComponents": {
     "video-swiper": "./video-swiper/index",
     "emoji": "./emoji/index",
-    "index-list": "./index-list/index"
-
+    "index-list": "./index-list/index",
+    "tabs": "./tabs/index"
   }
 }
