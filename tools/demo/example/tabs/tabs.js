@@ -2,7 +2,6 @@ Page({
   data: {
     tabs: [],
     activeTab: 0,
-    swipeable: true
   },
 
   onLoad() {
@@ -10,5 +9,15 @@ Page({
     const tabs = titles.map(item => ({title: item}))
     this.setData({tabs})
   },
+
+  onTabCLick(e) {
+    const index = e.detail.index
+    this.setData({activeTab: index})
+  },
+
+  onChange(e) {
+    const index = e.detail.index
+    this.setData({activeTab: index})
+  }
 
 })

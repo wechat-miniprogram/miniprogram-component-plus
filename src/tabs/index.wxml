@@ -1,43 +1,20 @@
 <view class="weui-tabs">
   <view class="weui-tabs-bar__wrp">
-    <scroll-view
-      scroll-x
-      scroll-into-view="item_{{currentView}}"
-      scroll-with-animation="{{animation}}"
-    >
+    <scroll-view scroll-x scroll-into-view="item_{{currentView}}" scroll-with-animation="{{animation}}">
       <view class="weui-tabs-bar__content">
         <block wx:for="{{tabs}}" wx:key="title">
-          <view
-            id="item_{{index}}" 
-            class="weui-tabs-bar__item {{tabClass}}"
-            style="background-color: {{tabBackgroundColor}}; color: {{activeTab === index ? tabActiveTextColor : tabInactiveTextColor}}; border-bottom-color: {{activeTab === index ? tabUnderlineColor : 'transparent'}}"
-            bindtap="handleTabClick"
-            data-index="{{index}}"
-          >
-            <view class="weui-tabs-bar__title {{activeTab === index ? activeClass : ''}}">
+          <view id="item_{{index}}" class="weui-tabs-bar__item" style="background-color: {{tabBackgroundColor}}; color: {{activeTab === index ? tabActiveTextColor : tabInactiveTextColor}};" bindtap="handleTabClick" data-index="{{index}}">
+            <view class="weui-tabs-bar__title {{tabClass}} {{activeTab === index ? activeClass : ''}}" style="border-bottom-color: {{activeTab === index ? tabUnderlineColor : 'transparent'}}">
               <text class="">{{item.title}}</text>
             </view>
           </view>
         </block>
       </view>
-      
     </scroll-view>
   </view>
-  <block wx:if="{{swipeable}}">
-    <swiper 
-      current="{{activeTap}}"
-      duration="{{duration}}"
-      bindchange="handleSwiperChange"
-      class="weui-tabs-content__wrp"
-    >
-      <slot></slot>
-    </swiper>
-  </block>
-  <block wx:else>
-    <view class="weui-tabs-content__wrp">
-      <view class="weui-tabs-slides" style="transform: translate3d({{-activeTab * 100}}vw, 0, 0)">
-        <slot></slot>
-      </view>
-    </view>
-  </block>
+  <swiper class="{{swiperClass}}" current="{{activeTab}}" duration="{{duration}}" bindchange="handleSwiperChange">
+    <swiper-item wx:for="{{tabs}}" wx:key="title">
+      <slot name="tab-content-{{index}}"></slot>
+    </swiper-item>
+  </swiper>
 </view>

@@ -1,6 +1,0 @@
-<swiper-item wx:if="{{tabId !== ''}}" item-id="tabs-pane-{{tabId}}" class="weui-tabs-pane__wrap">
-  <slot ></slot>
-</swiper-item>
-<view wx:else class="weui-tabs-pane__wrap" style="{{tabId === activeTab ? '' : 'height: 0px;'}}">
-  <slot ></slot>
-</view>
