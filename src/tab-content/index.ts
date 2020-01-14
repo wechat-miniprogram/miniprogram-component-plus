@@ -5,7 +5,8 @@ Component({
     pureDataPattern: /^_/
   },
   properties: {
-   
+    tabId: {type: String, value: ''},
+    activeTab: {type: String, value: ''},
   },
   data: {
     

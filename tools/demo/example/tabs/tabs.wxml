@@ -1,1 +1,13 @@
-<mp-tabs tabs="{{tabs}}" animation activeTab="{{activeTab}}"></mp-tabs>
+<mp-tabs tabs="{{tabs}}" animation activeTab="{{activeTab}}">
+  <block wx:for="{{tabs}}" wx:key="title">
+    <mp-tab-content tabId="{{index}}" activeTab="{{activeTab}}" wx:if="{{index === 0}}">
+      <view class="tab-content">高度为 100px {{item.title}}</view>
+    </mp-tab-content>
+    <mp-tab-content tabId="{{index}}" activeTab="{{activeTab}}" wx:elif="{{index === 1}}">
+      <view class="tab-content">改变 tab-content 高度为 200px {{item.title}}</view>
+    </mp-tab-content>
+    <mp-tab-content tabId="{{index}}" activeTab="{{activeTab}}" wx:else>
+      <view class="tab-content">content of {{item.title}}</view>
+    </mp-tab-content>
+  </block>
+</mp-tabs>

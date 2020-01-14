@@ -1,7 +1,8 @@
 Page({
   data: {
     tabs: [],
-    activeTab: 0
+    activeTab: 0,
+    swipeable: true
   },
 
   onLoad() {

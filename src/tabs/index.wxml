@@ -23,6 +23,21 @@
       
     </scroll-view>
   </view>
-  <view class="weui-tabs-content__wrp">
-  </view>
+  <block wx:if="{{swipeable}}">
+    <swiper 
+      current="{{activeTap}}"
+      duration="{{duration}}"
+      bindchange="handleSwiperChange"
+      class="weui-tabs-content__wrp"
+    >
+      <slot></slot>
+    </swiper>
+  </block>
+  <block wx:else>
+    <view class="weui-tabs-content__wrp">
+      <view class="weui-tabs-slides" style="transform: translate3d({{-activeTab * 100}}vw, 0, 0)">
+        <slot></slot>
+      </view>
+    </view>
+  </block>
 </view>

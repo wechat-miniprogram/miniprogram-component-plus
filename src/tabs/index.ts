@@ -15,6 +15,7 @@ Component({
     activeTab: {type: Number, value: 0}, // 当前激活tab
     swipeable : {type: Boolean, value: true}, // 内容区域是否可滑动
     animation: {type: Boolean, value: false}, // 选项卡滚动时是否带动画
+    duration: {type: Number, value: 500}, // 内容区域切换时长
 
   },
   data: {
@@ -44,6 +45,12 @@ Component({
       const index = e.currentTarget.dataset.index
       this.setData({activeTab: index})
       this.triggerEvent('tabclick', {index})
+    },
+
+    handleSwiperChange(e) {
+      const index = e.detail.current
+      this.setData({activeTab: index})
+      this.triggerEvent('change', {index})
     }
   }
 })
