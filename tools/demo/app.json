@@ -4,7 +4,8 @@
     "example/video-swiper/video-swiper",
     "example/emoji/emoji",
     "example/index-list/index-list",
-    "example/tabs/tabs"
+    "example/tabs/tabs",
+    "example/vtabs/vtabs"
   ],
   "window": {
     "navigationBarTextStyle": "black",
