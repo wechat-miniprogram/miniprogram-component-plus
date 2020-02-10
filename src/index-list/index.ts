@@ -111,7 +111,7 @@ Component({
             const data: any = this.data
              // 计算列表每个区块的高度等信息
             const query = this.createSelectorQuery()
-            query.selectAll('.city_list_item').boundingClientRect(rects => {
+            query.selectAll('.index_list_item').boundingClientRect(rects => {
                 const result: any = rects
                 data._tops = result.map(item => item.top)
             }).exec()
@@ -122,7 +122,7 @@ Component({
                 data._anchorTop = rect.top
             }).exec()
             // 计算滚动区域的上边界
-            query.select('.page-select-city').boundingClientRect(rect => {
+            query.select('.page-select-index').boundingClientRect(rect => {
                 data._listUpperBound = rect.top
             })
         },

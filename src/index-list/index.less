@@ -1,4 +1,3 @@
-/* pages/city/city.wxss */
 .wx-flex{
 	display: flex;
 	align-items: center;
@@ -25,118 +24,20 @@
 	transform: scaleY(0.5);
 	z-index: 2;
 }
-.thin-border-top{
-	position: relative;
-}
-.thin-border-top:after{
-	content: "";
-	position: absolute;
-	left: 0;
-	top: 0;
-	right: 0;
-	height: 1px;
-	border-bottom: 1px solid #EAEAEA;
-	color: #e5e5e5;
-	-webkit-transform-origin: 0 0;
-	transform-origin: 0 0;
-	-webkit-transform: scaleY(0.5);
-	transform: scaleY(0.5);
-	z-index: 2;
-}
 
-.square-tag{
-	color: #9a9a9a;
-	text-align: center;
-	height: 30px;
-	line-height: 30px;
-	box-sizing: border-box;
-	border-radius: 2px;
-	background-color: #f7f7f7;
-	font-size: 24rpx;
-	position: relative;
-}
-.square-tag:after{
-	content: "";
-	width: 200%;
-	height: 200%;
-	border: 1px solid #f7f7f7;
-	transform: scale(0.5);
-	transform-origin: 0 0;
-	position: absolute;
-	left: 0;
-	top: 0;
-	box-sizing: border-box;
-	border-radius: 4px;
-}
-.square-tag.selected{
-	background: rgba(26,173,25,0.10);
-	color: #1AAD19;
-}
-.square-tag.selected:after{
-	border: 1px solid #1AAD19;
-}
-
-.page-select-city{
-}
-.select-city__hd{
-	padding: 0 30rpx;
-	position: fixed;
-	height: 50px;
-	background-color: #fff;
-	left: 0;
-	right: 0;
-	z-index: 990;
-}
-.select-city__hd.thin-border-bottom:after{
-	left: 24rpx;
-	right: 24rpx;
-}
-.current-city__name{
-	display: inline-block;
-	margin-right: 20rpx;
-	margin-left: 12rpx;
-}
-.city-group_part .city-group__content{ 
-	padding: 0 30rpx;
-}
-.city-group_part .city-group__title{
-	padding-bottom: 24rpx;
-}
-.city-group__title{
+.index-group__title{
 	padding: 24rpx 24rpx 12rpx;
 }
-.city-group__content{
+.index-group__content{
 	font-size: 0;
 }
-.square-tag{
-	width: 200rpx;
-	display: inline-block;
-	margin-right: 24rpx;
-	margin-bottom: 24rpx;
-	height: 80rpx;
-	line-height: 80rpx;
-	font-size: 30rpx;
-	color: #000;
-	background-color: rgba(0, 0, 0, 0.02);
-	overflow: hidden;
-	white-space: nowrap;
-	text-overflow: ellipsis;
-}
 
-.city-group__item{
+.index-group__item{
 	padding: 30rpx 24rpx;
 	font-size: 30rpx;
 }
-.city-group__item.thin-border-bottom:after{
+.index-group__item.thin-border-bottom:after{
 	left: 24rpx;
-}
-.city-group_all{
-	padding-bottom: 100rpx;
-}
-
-.fixed__top {
-	position: fixed;
-	top: 0
 }
 
 .anchor-bar__wrp{
