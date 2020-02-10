@@ -10,5 +10,5 @@ page{
     height: 300px;
     box-sizing: border-box;
     border-bottom: 1px solid #ccc;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
 }

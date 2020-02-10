@@ -4,7 +4,7 @@
   bindtabclick="onTabCLick"
   bindchange="onChange"
 >
-  <block wx:for="vtabs" wx:key="title" >
+  <block wx:for="{{vtabs}}" wx:key="title" >
     <mp-vtabs-content tabIndex="{{index}}">
       <view class="vtabs-content-item">我是第{{index + 1}}项： {{item.title}}</view>
     </mp-vtabs-content>

@@ -19,12 +19,12 @@ Page({
 
   onTabCLick(e) {
     const index = e.detail.index
-    this.setData({activeTab: index})
+    console.log('tabClick', index)
   },
 
   onChange(e) {
     const index = e.detail.index
-    this.setData({activeTab: index})
+    console.log('change', index)
   }
 
 })

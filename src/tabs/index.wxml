@@ -1,6 +1,6 @@
 <view class="weui-tabs">
   <view class="weui-tabs-bar__wrp">
-    <scroll-view scroll-x scroll-into-view="item_{{currentView}}" scroll-with-animation="{{animation}}">
+    <scroll-view scroll-x scroll-into-view="item_{{currentView}}">
       <view class="weui-tabs-bar__content">
         <block wx:for="{{tabs}}" wx:key="title">
           <view id="item_{{index}}" class="weui-tabs-bar__item" style="background-color: {{tabBackgroundColor}}; color: {{activeTab === index ? tabActiveTextColor : tabInactiveTextColor}};" bindtap="handleTabClick" data-index="{{index}}">

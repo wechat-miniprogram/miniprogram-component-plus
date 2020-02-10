@@ -15,8 +15,6 @@ Component({
     tabInactiveTextColor: {type: String, value: '#000000'}, // 未选中选项卡字体颜色
     tabBackgroundColor: {type: String, value: '#ffffff'}, // 选项卡背景颜色
     activeTab: {type: Number, value: 0}, // 当前激活tab
-    swipeable : {type: Boolean, value: true}, // 内容区域是否可滑动
-    animation: {type: Boolean, value: true}, // 选项卡滚动时是否带动画
     duration: {type: Number, value: 500}, // 内容区域切换时长
 
   },
