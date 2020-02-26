@@ -5,6 +5,7 @@
     "index-list": "./index-list/index",
     "tabs": "./tabs/index",
     "vtabs": "./vtabs/index",
-    "vtabs-content": "./vtabs-content/index"
+    "vtabs-content": "./vtabs-content/index",
+    "sticky": "./sticky/index"
   }
 }

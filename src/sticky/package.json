@@ -1,5 +1,5 @@
 {
-  "name": "@miniprogram-component-plus/vtabs",
+  "name": "@miniprogram-component-plus/sticky",
   "version": "1.0.0",
   "description": "",
   "main": "miniprogram_dist/index.js",
@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "vtabs",
+    "sticky",
     "miniprogram"
   ],
   "author": "sanfordsun",

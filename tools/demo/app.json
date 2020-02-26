@@ -5,7 +5,8 @@
     "example/emoji/emoji",
     "example/index-list/index-list",
     "example/tabs/tabs",
-    "example/vtabs/vtabs"
+    "example/vtabs/vtabs",
+    "example/sticky/sticky"
   ],
   "window": {
     "navigationBarTextStyle": "black",

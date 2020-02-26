@@ -8,7 +8,7 @@
 | ---------- | --------------- | ------ | ---- | ------------------------------------- |
 | list       | Array<listItem> | []     | 是   | 列表数据                              |
 | vibrated   | boolean         | true   | 否   | 索引上滑动时是否产生振动，仅 iOS 生效 |
-| bindchoose | eventhandle     | 否     |      | 选择列表项, e.detail={name}           |
+| bindchoose | eventhandle     |      |   否   | 选择列表项, e.detail={name}           |
 
 ### listItem 属性列表
 

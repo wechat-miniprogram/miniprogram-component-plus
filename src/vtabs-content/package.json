@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "tabs",
+    "vtabs-content",
     "miniprogram"
   ],
   "author": "sanfordsun",
