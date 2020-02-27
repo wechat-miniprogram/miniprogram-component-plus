@@ -1,0 +1,17 @@
+@import '../common.wxss';
+
+page{
+    background-color: #fff;
+    height: 100%;
+}
+
+.demo-block {
+    margin-bottom: 20px;
+    padding: 14px;
+}
+
+.demo-title {
+    margin: 10px 0;
+    font-size: 24px;
+    font-weight: bold;
+}

@@ -1,0 +1,3 @@
+<text selectable space="{{space}}" decode="{{decode}}">
+  <slot ></slot>
+</text>
