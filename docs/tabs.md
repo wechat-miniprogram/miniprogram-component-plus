@@ -7,14 +7,14 @@
 | 属性                 | 类型        | 默认值  | 必填 | 说明                                              |
 | -------------------- | ----------- | ------- | ---- | ------------------------------------------------- |
 | tabs                 | Array       | []      | 是   | 数据项格式为 `{title}`                            |
-| tabClass             | String      |         | 否   | 选项卡样式                                        |
-| swiperClass          | String      |         | 否   | 内容区域 swiper 的样式                            |
-| activeClass          | String      |         | 否   | 选中项样式                                        |
-| tabUnderlineColor    | String      | #07c160 | 否   | 选中项下划线颜色                                  |
-| tabActiveTextColor   | String      | #000000 | 否   | 选中项字体颜色                                    |
-| tabInactiveTextColor | String      | #000000 | 否   | 未选中项字体颜色                                  |
-| tabBackgroundColor   | String      | #ffffff | 否   | 选项卡背景颜色                                    |
-| activeTab            | Number      | 0       | 否   | 激活 tab 索引                                     |
+| tab-class             | String      |         | 否   | 选项卡样式                                        |
+| swiper-class          | String      |         | 否   | 内容区域 swiper 的样式                            |
+| active-class          | String      |         | 否   | 选中项样式                                        |
+| tab-underline-color    | String      | #07c160 | 否   | 选中项下划线颜色                                  |
+| tab-active-text-color   | String      | #000000 | 否   | 选中项字体颜色                                    |
+| tab-inactive-text-color | String      | #000000 | 否   | 未选中项字体颜色                                  |
+| tab-background-color   | String      | #ffffff | 否   | 选项卡背景颜色                                    |
+| active-tab            | Number      | 0       | 否   | 激活 tab 索引                                     |
 | duration             | Number      | 500     | 否   | 内容区域切换时长                                  |
 | bindtabclick         | eventhandle |         | 否   | 点击 tab 时触发，e.detail={index}                 |
 | bindchange           | eventhandle |         | 否   | 内容区域滚动导致 tab 变化时触发, e.detail={index} |
