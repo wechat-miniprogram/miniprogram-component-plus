@@ -6,7 +6,8 @@
     "example/index-list/index-list",
     "example/tabs/tabs",
     "example/vtabs/vtabs",
-    "example/sticky/sticky"
+    "example/sticky/sticky",
+    "example/select-text/select-text"
   ],
   "window": {
     "navigationBarTextStyle": "black",

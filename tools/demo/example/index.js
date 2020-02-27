@@ -5,7 +5,7 @@ Page({
                 id: 'widget',
                 name: '业务相关',
                 open: false,
-                pages: ['video-swiper', 'emoji', 'index-list', 'tabs', 'vtabs', 'sticky']
+                pages: ['video-swiper', 'emoji', 'index-list', 'tabs', 'vtabs', 'sticky', 'select-text']
             }
         ]
     },
