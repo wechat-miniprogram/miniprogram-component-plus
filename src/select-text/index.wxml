@@ -1,3 +1,15 @@
-<text selectable space="{{space}}" decode="{{decode}}">
-  <slot ></slot>
-</text>
+<view class="weui-select-text">
+  <text 
+    selectable="{{!showCopyBtn}}" 
+    space="{{space}}" 
+    decode="{{decode}}" 
+    bindlongpress="handleLongPress"
+  >{{value}}</text>
+  <view 
+    wx:if="{{showCopyBtn && showToolTip}}"
+    class="weui-tooltip weui-tooltip__{{placement}}"
+    bindtap="handleCopy"
+  >
+    复制
+  </view>
+</view>

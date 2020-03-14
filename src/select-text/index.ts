@@ -12,8 +12,43 @@ Component({
     decode: {
       type: Boolean,
       value: false
-    }
+    },
 
+    placement: {
+      type: String,
+      value: 'top'
+    },
+
+    showCopyBtn: {
+      type: Boolean,
+      value: false
+    },
+
+    value: {
+      type: String,
+      value: ''
+    }
+  },
+  data: {
+    showToolTip: false
+  },
+  methods: {
+    handleLongPress() {
+      if (!this.data.showCopyBtn) return
+
+      this.setData({
+        showToolTip: true
+      })
+    },
+
+    handleCopy() {
+      this.setData({
+        showToolTip: false
+      })
+      this.triggerEvent('copy', {
+        value: this.data.value
+      })
+    }
   }
 })
   
