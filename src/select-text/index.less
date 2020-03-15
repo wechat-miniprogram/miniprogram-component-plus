@@ -1,0 +1,88 @@
+.weui-select-text {
+  display: inline;
+  position: relative;
+}
+
+.weui-tooltip {
+  box-sizing: border-box;
+  width: 60px;
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  font-size: 14px;
+
+  &__top {
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -100%);
+    margin-top: -10px;
+  }
+
+  &__top::after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+  }
+
+  &__bottom {
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, 0);
+    margin-top: 10px;
+  }
+
+  &__bottom::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+  }
+
+  &__left {
+    left: 0;
+    top: 50%;
+    transform: translate(-100%, -50%);
+    margin-left: -10px;
+  }
+
+  &__left::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(0, -50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent black;
+  }
+
+  &__right {
+    left: 100%;
+    top: 50%;
+    transform: translate(0, -50%);
+    margin-left: 10px;
+  }
+
+  &__right::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-100%, -50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+  }
+}

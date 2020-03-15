@@ -1,6 +1,6 @@
 {
   "name": "@miniprogram-component-plus/select-text",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "miniprogram_dist/index.js",
   "scripts": {
