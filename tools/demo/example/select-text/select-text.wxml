@@ -1,12 +1,19 @@
-<view class="demo-block">
-  <view class="demo-title">
-    <mp-select-text>可选择复制文本区</mp-select-text>
+<view bind:tap="handleTap">
+  <view class="demo-block">
+    <block wx:for="{{arr}}" wx:key="placement">
+      <view class="list-item">
+        <mp-select-text 
+          show-copy-btn 
+          placement="{{item.placement}}" 
+          value="{{item.value}}" 
+          data-id="{{index}}" 
+          on-document-tap="{{evt}}"
+        >
+        </mp-select-text>
+      </view>
+    </block>
+    <view class="list-item">
+      <mp-select-text value="默认的长按效果与浏览器一致"></mp-select-text>
+    </view>
   </view>
-  <mp-select-text>今日，中央应对新冠肺炎疫情工作领导小组会议强调，要进一步落实分区分级防控。落实企事业单位复工复产疫情防控指南，细化老年人、儿童等重点人群疫情防控措施。大中小学、幼儿园等开学开园时间原则上继续推迟。</mp-select-text>
-</view>
-<view class="demo-block">
-  <view class="demo-title">
-    <text >不可选择复制文本区</text>
-  </view>
-  <text >今日，中央应对新冠肺炎疫情工作领导小组会议强调，要进一步落实分区分级防控。落实企事业单位复工复产疫情防控指南，细化老年人、儿童等重点人群疫情防控措施。大中小学、幼儿园等开学开园时间原则上继续推迟。</text>
 </view>

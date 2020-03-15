@@ -7,11 +7,10 @@ page{
 
 .demo-block {
     margin-bottom: 20px;
-    padding: 14px;
+    padding: 20px;
 }
 
-.demo-title {
-    margin: 10px 0;
-    font-size: 24px;
-    font-weight: bold;
+.list-item {
+    text-align: center;
+    margin: 50px;
 }
