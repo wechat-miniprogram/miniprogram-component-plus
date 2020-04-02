@@ -17,8 +17,7 @@
 | bindsend         | eventhandle |         | 否   | 点击发送按钮                     |
 
 ### 示例代码
-
-{% minicode('O5zWgRmV7zfR') %}
+{% minicode('tatgGjmN7cgo') %}
 
 ## 使用方式
 
@@ -35,7 +34,8 @@ const comment = '测试[得意][偷笑]文本'
 const parsedCommnet = parseEmoji(comment)
 ```
 
-解析后的评论结构如下，文字和表情分割构成的数组，`type=1` 为纯文本，`type=2` 为表情 `icon`。
+解析后的评论结构如下，文字和表情分割构成的数组，`type=1` 为纯文本，`type=2` 为表情 `icon`，`imageClass` 记录了表情在雪碧图上的位置。需注意的是组件开启了 `styleIsolation: 'page-shared'`，组件内样式与页面共享。
+
 ```js
 [
   {type: 1, content: '测试'},
@@ -71,4 +71,4 @@ const parsedCommnet = parseEmoji(comment)
 }
 ```
 
-如何与 `textarea` 结合使用，参考示例代码。
+如何与 `input` 结合使用，参考示例代码。

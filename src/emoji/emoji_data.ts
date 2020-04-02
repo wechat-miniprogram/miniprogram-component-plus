@@ -104,7 +104,7 @@
     , { 'id': 102, 'cn': '[献吻]', 'hk': '[獻吻]', 'us': '[Smooch]', 'code': '/:kiss', 'web_code': '/献吻', 'style': 'smiley_102' }
     , { 'id': 103, 'cn': '[左太极]', 'hk': '[左太極]', 'us': '[TaiChi L]', 'code': '/:<&', 'web_code': '/左太极', 'style': 'smiley_103' }
     , { 'id': 104, 'cn': '[右太极]', 'hk': '[右太極]', 'us': '[TaiChi R]', 'code': '/:&>', 'web_code': '/右太极', 'style': 'smiley_104' }
-    , { 'id': 204, 'cn': '[嘿哈]', 'hk': '[吼嘿]', 'us': '[Hey]', 'code': '', 'web_code': '', 'style': 'smiley_2_04' }
+    , { 'id': 204, 'cn': '[嘿哈]', 'hk': '[吼嘿]', 'us': '[Hey]', 'code': '', 'web_code': '', 'style': 'e2_04' }
     , { 'id': 205, 'cn': '[捂脸]', 'hk': '[掩面]', 'us': '[Facepalm]', 'code': '', 'web_code': '', 'style': 'e2_05' }
     , { 'id': 202, 'cn': '[奸笑]', 'hk': '[奸笑]', 'us': '[Smirk]', 'code': '', 'web_code': '', 'style': 'e2_02' }
     , { 'id': 206, 'cn': '[机智]', 'hk': '[機智]', 'us': '[Smart]', 'code': '', 'web_code': '', 'style': 'e2_06' }
