@@ -1,14 +1,29 @@
-const emojiNames = '[微笑]|[撇嘴]|[色]|[发呆]|[得意]|[流泪]|[害羞]|[闭嘴]|[睡]|[大哭]|[尴尬]|[发怒]|[调皮]|[呲牙]|[惊讶]|[难过]|[酷]|[冷汗]|[抓狂]|[吐]|[偷笑]|[愉快]|[白眼]|[傲慢]|[饥饿]|[困]|[惊恐]|[流汗]|[憨笑]|[悠闲]|[奋斗]|[咒骂]|[疑问]|[嘘]|[晕]|[疯了]|[衰]|[骷髅]|[敲打]|[再见]|[擦汗]|[抠鼻]|[鼓掌]|[糗大了]|[坏笑]|[左哼哼]|[右哼哼]|[哈欠]|[鄙视]|[委屈]|[快哭了]|[阴险]|[亲亲]|[吓]|[可怜]|[菜刀]|[西瓜]|[啤酒]|[篮球]|[乒乓]|[咖啡]|[饭]|[猪头]|[玫瑰]|[凋谢]|[嘴唇]|[爱心]|[心碎]|[蛋糕]|[闪电]|[炸弹]|[刀]|[足球]|[瓢虫]|[便便]|[月亮]|[太阳]|[礼物]|[拥抱]|[强]|[弱]|[握手]|[胜利]|[抱拳]|[勾引]|[拳头]|[差劲]|[爱你]|[NO]|[OK]|[爱情]|[飞吻]|[跳跳]|[发抖]|[怄火]|[转圈]|[磕头]|[回头]|[跳绳]|[投降]|[激动]|[乱舞]|[献吻]|[左太极]|[右太极]|[嘿哈]|[捂脸]|[奸笑]|[机智]|[皱眉]|[耶]|[茶]|[红包]|[蜡烛]|[福]|[鸡]|[笑脸]|[生病]|[破涕为笑]|[吐舌]|[脸红]|[恐惧]|[失望]|[无语]|[鬼魂]|[合十]|[强壮]|[庆祝]|[礼物]|[囧]|[再见]|[抱拳]|[皱眉]'.split('|')
-
 Page({
   data: {
+    lineHeight: 24,
     functionShow: false,
     emojiShow: false,
     comment: '',
     focus: false,
     cursor: 0,
-    _keyboardShow: false
+    _keyboardShow: false,
+    emojiSource: 'https://res.wx.qq.com/op_res/PO2f3m6zfWEcz0a1UnLLecjICyfjZvS6MmLrI7qaaD6638TOq2bgBCO9W5uhd6Em',
+    parsedComment: []
   },
+
+  onLoad() {
+    const emojiInstance = this.selectComponent('.mp-emoji')
+    this.emojiNames = emojiInstance.getEmojiNames()
+    this.parseEmoji = emojiInstance.parseEmoji
+  },
+
+  onkeyboardHeightChange(e) {
+    const {height} = e.detail
+    this.setData({
+      keyboardHeight: height
+    })
+  },
+
   hideAllPanel() {
     this.setData({
       functionShow: false,
@@ -40,7 +55,9 @@ Page({
     const value = e.detail.value
     this.data.comment = value
   },
-  onConfirm() {},
+  onConfirm() {
+    this.onsend()
+  },
   insertEmoji(evt) {
     const emotionName = evt.detail.emotionName
     const { cursor, comment } = this.data
@@ -49,6 +66,14 @@ Page({
     this.setData({
       comment: newComment,
       cursor: cursor + emotionName.length
+    })
+  },
+  onsend() {
+    const comment = this.data.comment
+    const parsedComment = this.parseEmoji(this.data.comment)
+    this.setData({
+      parsedComment,
+      comment: ''
     })
   },
   deleteEmoji: function() {
@@ -69,7 +94,7 @@ Page({
     if (matchs) {
       const rawName = matchs[0]
       const left = emojiLen - rawName.length
-      if (emojiNames.indexOf(rawName) >= 0) {
+      if (this.emojiNames.indexOf(rawName) >= 0) {
         const replace = str.replace(rawName, '')
         result = comment.slice(0, startPos) + replace + comment.slice(pos)
         cursor = startPos + left

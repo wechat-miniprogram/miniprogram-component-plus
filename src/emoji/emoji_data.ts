@@ -104,33 +104,27 @@
     , { 'id': 102, 'cn': '[献吻]', 'hk': '[獻吻]', 'us': '[Smooch]', 'code': '/:kiss', 'web_code': '/献吻', 'style': 'smiley_102' }
     , { 'id': 103, 'cn': '[左太极]', 'hk': '[左太極]', 'us': '[TaiChi L]', 'code': '/:<&', 'web_code': '/左太极', 'style': 'smiley_103' }
     , { 'id': 104, 'cn': '[右太极]', 'hk': '[右太極]', 'us': '[TaiChi R]', 'code': '/:&>', 'web_code': '/右太极', 'style': 'smiley_104' }
-    , { 'id': 204, 'cn': '[嘿哈]', 'hk': '[吼嘿]', 'us': '[Hey]', 'code': '', 'web_code': '', 'style': 'smiley_2_04' }
-    , { 'id': 205, 'cn': '[捂脸]', 'hk': '[掩面]', 'us': '[Facepalm]', 'code': '', 'web_code': '', 'style': 'smiley_2_05' }
-    , { 'id': 202, 'cn': '[奸笑]', 'hk': '[奸笑]', 'us': '[Smirk]', 'code': '', 'web_code': '', 'style': 'smiley_2_02' }
-    , { 'id': 206, 'cn': '[机智]', 'hk': '[機智]', 'us': '[Smart]', 'code': '', 'web_code': '', 'style': 'smiley_2_06' }
-    , { 'id': 212, 'cn': '[皱眉]', 'hk': '[皺眉]', 'us': '[Moue]', 'code': '', 'web_code': '', 'style': 'smiley_2_12' }
-    , { 'id': 211, 'cn': '[耶]', 'hk': '[歐耶]', 'us': '[Yeah!]', 'code': '', 'web_code': '', 'style': 'smiley_2_11' }
-    , { 'id': 207, 'cn': '[茶]', 'hk': '[茶]', 'us': '[Tea]', 'code': '', 'web_code': '', 'style': 'smiley_2_07' }
-    , { 'id': 209, 'cn': '[红包]', 'hk': '[Packet]', 'us': '[Packet]', 'code': '', 'web_code': '', 'style': 'smiley_2_09' }
-    , { 'id': 210, 'cn': '[蜡烛]', 'hk': '[蠟燭]', 'us': '[Candle]', 'code': '', 'web_code': '', 'style': 'smiley_2_10' }
-    , { 'id': 215, 'cn': '[福]', 'hk': '[福]', 'us': '[Blessing]', 'code': '', 'web_code': '', 'style': 'smiley_2_15' }
-    , { 'id': 214, 'cn': '[鸡]', 'hk': '[小雞]', 'us': '[Chick]', 'code': '', 'web_code': '', 'style': 'smiley_2_14' }
-    , { 'id': 300, 'cn': '[笑脸]', 'emoji': '😄', 'hk': '', 'us': '', 'code': '\\ue415', 'web_code': '', 'style': 'smiley_u1F604' }
-    , { 'id': 301, 'cn': '[生病]', 'emoji': '😷', 'hk': '', 'us': '', 'code': '\\ue40c', 'web_code': '', 'style': 'smiley_u1F637' }
-    , { 'id': 302, 'cn': '[破涕为笑]', 'emoji': '😂', 'hk': '', 'us': '', 'code': '\\ue412', 'web_code': '', 'style': 'smiley_u1F602' }
-    , { 'id': 303, 'cn': '[吐舌]', 'emoji': '😝', 'hk': '', 'us': '', 'code': '\\ue409', 'web_code': '', 'style': 'smiley_u1F61D' }
-    , { 'id': 304, 'cn': '[脸红]', 'emoji': '😳', 'hk': '', 'us': '', 'code': '\\ue40d', 'web_code': '', 'style': 'smiley_u1F633' }
-    , { 'id': 305, 'cn': '[恐惧]', 'emoji': '😱', 'hk': '', 'us': '', 'code': '\\ue107', 'web_code': '', 'style': 'smiley_u1F631' }
-    , { 'id': 306, 'cn': '[失望]', 'emoji': '😔', 'hk': '', 'us': '', 'code': '\\ue403', 'web_code': '', 'style': 'smiley_u1F614' }
-    , { 'id': 307, 'cn': '[无语]', 'emoji': '😒', 'hk': '', 'us': '', 'code': '\\ue40e', 'web_code': '', 'style': 'smiley_u1F612' }
-    , { 'id': 308, 'cn': '[鬼魂]', 'emoji': '👻', 'hk': '', 'us': '', 'code': '\\ue11b', 'web_code': '', 'style': 'smiley_u1F47B' }
-    , { 'id': 309, 'cn': '[合十]', 'emoji': '🙏', 'hk': '', 'us': '', 'code': '\\ue41d', 'web_code': '', 'style': 'smiley_u1F64F' }
-    , { 'id': 310, 'cn': '[强壮]', 'emoji': '💪', 'hk': '', 'us': '', 'code': '\\ue14c', 'web_code': '', 'style': 'smiley_u1F4AA' }
-    , { 'id': 311, 'cn': '[庆祝]', 'emoji': '🎉', 'hk': '', 'us': '', 'code': '\\ue312', 'web_code': '', 'style': 'smiley_u1F389' }
-    , { 'id': 312, 'cn': '[礼物]', 'hk': '', 'us': '', 'code': '\\ue112', 'web_code': '', 'style': 'smiley_u1F381' }
-    , { 'id': '17_1', 'cn': '[囧]', 'hk': '[囧]', 'us': '[Blush]', 'code': '', 'web_code': '', 'style': 'smiley_17' }
-    , { 'id': '39_1', 'cn': '[再见]', 'hk': '[再見]', 'us': '[Bye]', 'code': '', 'web_code': '', 'style': 'smiley_39' }
-    , { 'id': '83_1', 'cn': '[抱拳]', 'hk': '[抱拳]', 'us': '[Salute]', 'code': '', 'web_code': '', 'style': 'smiley_83' }
-    , { 'id': '21smiley_2_1', 'cn': '[皱眉]', 'hk': '[皺眉]', 'us': '[Concerned]', 'code': '', 'web_code': '', 'style': 'smiley_2_12' }
-  ]
-
+    , { 'id': 204, 'cn': '[嘿哈]', 'hk': '[吼嘿]', 'us': '[Hey]', 'code': '', 'web_code': '', 'style': 'e2_04' }
+    , { 'id': 205, 'cn': '[捂脸]', 'hk': '[掩面]', 'us': '[Facepalm]', 'code': '', 'web_code': '', 'style': 'e2_05' }
+    , { 'id': 202, 'cn': '[奸笑]', 'hk': '[奸笑]', 'us': '[Smirk]', 'code': '', 'web_code': '', 'style': 'e2_02' }
+    , { 'id': 206, 'cn': '[机智]', 'hk': '[機智]', 'us': '[Smart]', 'code': '', 'web_code': '', 'style': 'e2_06' }
+    , { 'id': 212, 'cn': '[皱眉]', 'hk': '[皺眉]', 'us': '[Moue]', 'code': '', 'web_code': '', 'style': 'e2_12' }
+    , { 'id': 211, 'cn': '[耶]', 'hk': '[歐耶]', 'us': '[Yeah!]', 'code': '', 'web_code': '', 'style': 'e2_11' }
+    , { 'id': 207, 'cn': '[茶]', 'hk': '[茶]', 'us': '[Tea]', 'code': '', 'web_code': '', 'style': 'e2_07' }
+    , { 'id': 209, 'cn': '[红包]', 'hk': '[Packet]', 'us': '[Packet]', 'code': '', 'web_code': '', 'style': 'e2_09' }
+    , { 'id': 210, 'cn': '[蜡烛]', 'hk': '[蠟燭]', 'us': '[Candle]', 'code': '', 'web_code': '', 'style': 'e2_10' }
+    , { 'id': 215, 'cn': '[福]', 'hk': '[福]', 'us': '[Blessing]', 'code': '', 'web_code': '', 'style': 'e2_15' }
+    , { 'id': 214, 'cn': '[鸡]', 'hk': '[小雞]', 'us': '[Chick]', 'code': '', 'web_code': '', 'style': 'e2_14' }
+    , { 'id': 300, 'cn': '[笑脸]', 'emoji': '😄', 'hk': '', 'us': '', 'code': '\\ue415', 'web_code': '', 'style': 'u1F604' }
+    , { 'id': 301, 'cn': '[生病]', 'emoji': '😷', 'hk': '', 'us': '', 'code': '\\ue40c', 'web_code': '', 'style': 'u1F637' }
+    , { 'id': 302, 'cn': '[破涕为笑]', 'emoji': '😂', 'hk': '', 'us': '', 'code': '\\ue412', 'web_code': '', 'style': 'u1F602' }
+    , { 'id': 303, 'cn': '[吐舌]', 'emoji': '😝', 'hk': '', 'us': '', 'code': '\\ue409', 'web_code': '', 'style': 'u1F61D' }
+    , { 'id': 304, 'cn': '[脸红]', 'emoji': '😳', 'hk': '', 'us': '', 'code': '\\ue40d', 'web_code': '', 'style': 'u1F633' }
+    , { 'id': 305, 'cn': '[恐惧]', 'emoji': '😱', 'hk': '', 'us': '', 'code': '\\ue107', 'web_code': '', 'style': 'u1F631' }
+    , { 'id': 306, 'cn': '[失望]', 'emoji': '😔', 'hk': '', 'us': '', 'code': '\\ue403', 'web_code': '', 'style': 'u1F614' }
+    , { 'id': 307, 'cn': '[无语]', 'emoji': '😒', 'hk': '', 'us': '', 'code': '\\ue40e', 'web_code': '', 'style': 'u1F612' }
+    , { 'id': 308, 'cn': '[鬼魂]', 'emoji': '👻', 'hk': '', 'us': '', 'code': '\\ue11b', 'web_code': '', 'style': 'u1F47B' }
+    , { 'id': 309, 'cn': '[合十]', 'emoji': '🙏', 'hk': '', 'us': '', 'code': '\\ue41d', 'web_code': '', 'style': 'u1F64F' }
+    , { 'id': 310, 'cn': '[强壮]', 'emoji': '💪', 'hk': '', 'us': '', 'code': '\\ue14c', 'web_code': '', 'style': 'u1F4AA' }
+    , { 'id': 311, 'cn': '[庆祝]', 'emoji': '🎉', 'hk': '', 'us': '', 'code': '\\ue312', 'web_code': '', 'style': 'u1F389' }
+    , { 'id': 312, 'cn': '[礼物]', 'hk': '', 'us': '', 'code': '\\ue112', 'web_code': '', 'style': 'u1F381' }]
