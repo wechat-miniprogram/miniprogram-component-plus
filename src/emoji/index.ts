@@ -2,10 +2,8 @@ import emojiData from './emoji_data'
 import emojiPanelData from './emoji_panel_data'
 import {parseEmoji} from './parser'
 
-// padding & size 跟 less 文件对应
-const PADDING = 10
+// size 跟 less 文件对应
 const EMOTION_SIZE = 40
-
 const emotionMap = {}
 const emotionNames = []
 
@@ -24,6 +22,11 @@ Component({
     pureDataPattern: /^_/ // 指定所有 _ 开头的数据字段为纯数据字段
   },
   properties: {
+    padding: {
+      type: Number,
+      value: 15
+    },
+
     backgroundColor: {
       type: String,
       value: '#EDEDED'
@@ -64,10 +67,12 @@ Component({
 
   lifetimes: {
     attached() {
+      const padding = this.data.padding
       const systemInfo = wx.getSystemInfoSync()
       const areaWidth = systemInfo.windowWidth
-      const perLine = Math.floor((areaWidth - PADDING * 2) / EMOTION_SIZE)
-      const extraPadding = Math.floor((areaWidth - PADDING * 2 - perLine * EMOTION_SIZE) / (perLine - 1))
+      // 这里的 45 为虚拟的表情宽度
+      const perLine = Math.floor((areaWidth - padding * 2) / 45)
+      const extraPadding = Math.floor((areaWidth - padding * 2 - perLine * EMOTION_SIZE) / (perLine - 1))
       this.setData({
         perLine,
         extraPadding,
