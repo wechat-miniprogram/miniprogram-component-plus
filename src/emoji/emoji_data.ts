@@ -127,4 +127,16 @@
     , { 'id': 309, 'cn': '[合十]', 'emoji': '🙏', 'hk': '', 'us': '', 'code': '\\ue41d', 'web_code': '', 'style': 'u1F64F' }
     , { 'id': 310, 'cn': '[强壮]', 'emoji': '💪', 'hk': '', 'us': '', 'code': '\\ue14c', 'web_code': '', 'style': 'u1F4AA' }
     , { 'id': 311, 'cn': '[庆祝]', 'emoji': '🎉', 'hk': '', 'us': '', 'code': '\\ue312', 'web_code': '', 'style': 'u1F389' }
-    , { 'id': 312, 'cn': '[礼物]', 'hk': '', 'us': '', 'code': '\\ue112', 'web_code': '', 'style': 'u1F381' }]
+    , { 'id': 312, 'cn': '[礼物]', 'hk': '', 'us': '', 'code': '\\ue112', 'web_code': '', 'style': 'u1F381' }
+
+    , { 'id': 313, 'cn': '[吃瓜]', 'hk': '[]', 'us': '[]', 'code': '', 'web_code': '', 'style': 'smiley_313' }
+    , { 'id': 314, 'cn': '[加油]', 'hk': '[]', 'us': '[]', 'code': '', 'web_code': '', 'style': 'smiley_314' }
+    , { 'id': 315, 'cn': '[汗]', 'hk': '[]', 'us': '[]', 'code': '', 'web_code': '', 'style': 'smiley_315' }
+    , { 'id': 316, 'cn': '[天啊]', 'hk': '[]', 'us': '[]', 'code': '', 'web_code': '', 'style': 'smiley_316' }
+    , { 'id': 317, 'cn': '[Emm]', 'hk': '[]', 'us': '[]', 'code': '', 'web_code': '', 'style': 'smiley_317' }
+    , { 'id': 318, 'cn': '[社会社会]', 'hk': '[]', 'us': '[]', 'code': '', 'web_code': '', 'style': 'smiley_318' }
+    , { 'id': 319, 'cn': '[旺柴]', 'hk': '[]', 'us': '[]', 'code': '', 'web_code': '', 'style': 'smiley_319' }
+    , { 'id': 320, 'cn': '[好的]', 'hk': '[]', 'us': '[]', 'code': '', 'web_code': '', 'style': 'smiley_320' }
+    , { 'id': 321, 'cn': '[打脸]', 'hk': '[]', 'us': '[]', 'code': '', 'web_code': '', 'style': 'smiley_321' }
+    , { 'id': 322, 'cn': '[哇]', 'hk': '[]', 'us': '[]', 'code': '', 'web_code': '', 'style': 'smiley_322' }
+  ]
