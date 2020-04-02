@@ -17,7 +17,7 @@
 | bindsend         | eventhandle |         | 否   | 点击发送按钮                     |
 
 ## 示例代码
-{% minicode('tatgGjmN7cgo') %}
+{% minicode('cKyK0jmE7lgd') %}
 
 ## 使用方式
 
