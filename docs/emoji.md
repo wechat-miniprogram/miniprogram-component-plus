@@ -1,6 +1,6 @@
 # emoji
 
-仿微信表情组件。使用前需将提供的表情雪碧图上传 `CDN`，再传入表情组件。
+仿微信表情组件。使用前需将文档下方提供的表情雪碧图上传 `CDN`，再传入表情组件。
 
 ## 属性列表
 
@@ -16,7 +16,7 @@
 | binddelemoji     | eventhandle |         | 否   | 点击删除按钮                     |
 | bindsend         | eventhandle |         | 否   | 点击发送按钮                     |
 
-### 示例代码
+## 示例代码
 {% minicode('tatgGjmN7cgo') %}
 
 ## 使用方式
@@ -72,3 +72,7 @@ const parsedCommnet = parseEmoji(comment)
 ```
 
 如何与 `input` 结合使用，参考示例代码。
+
+### 表情雪碧图
+
+![emoji-sprite](./img/emoji-sprite.png)
