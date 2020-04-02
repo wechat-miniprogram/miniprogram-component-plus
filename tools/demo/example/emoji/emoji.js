@@ -7,7 +7,8 @@ Page({
     focus: false,
     cursor: 0,
     _keyboardShow: false,
-    emojiSource: 'https://res.wx.qq.com/op_res/PO2f3m6zfWEcz0a1UnLLecjICyfjZvS6MmLrI7qaaD6638TOq2bgBCO9W5uhd6Em'
+    emojiSource: 'https://res.wx.qq.com/op_res/PO2f3m6zfWEcz0a1UnLLecjICyfjZvS6MmLrI7qaaD6638TOq2bgBCO9W5uhd6Em',
+    parsedComment: []
   },
 
   onLoad() {

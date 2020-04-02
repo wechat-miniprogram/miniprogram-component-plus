@@ -1,4 +1,4 @@
-<view class="record">
+<view class="record" hidden="{{parsedComment.length === 0}}">
   <view class="avator"></view>
   <view class="comment">
     <block wx:for="{{parsedComment}}" wx:key="*this">
@@ -21,7 +21,20 @@
     </view>
     <view class="reply_form_wrp">
       <label for="" class="reply_label">
-        <input class="reply_input" cursor-spacing="8px" confirm-type="send" adjust-position="{{false}}" confirm-hold value="{{comment}}" cursor="{{cursor}}" focus="{{focus}}" bindblur="onBlur" bindfocus="onFocus" bindinput="onInput" bindconfirm="onConfirm" bindkeyboardheightchange="onkeyboardHeightChange" />
+        <input 
+          class="reply_input" 
+          cursor-spacing="8px" 
+          confirm-type="send" 
+          adjust-position="{{false}}" 
+          confirm-hold value="{{comment}}" 
+          cursor="{{cursor}}" 
+          focus="{{focus}}" 
+          bindblur="onBlur" 
+          bindfocus="onFocus" 
+          bindinput="onInput" 
+          bindconfirm="onConfirm" 
+          bindkeyboardheightchange="onkeyboardHeightChange"
+        />
       </label>
     </view>
     <view hover-class="active" class="reply_button replay_emotion_button" bindtap="showEmoji">
