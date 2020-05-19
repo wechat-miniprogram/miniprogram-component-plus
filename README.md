@@ -35,7 +35,7 @@ npm run clean-dev
 ```
 ## 子模块开发
 
-src 下每个组件目录对应一个 npm 模块，需保证文件名均为 index.xxx，同时添加 packet.json， 参考 src/video-swiper。
+src 下每个组件目录对应一个 npm 模块，需保证文件名均为 index.xxx，同时添加 package.json， 参考 src/video-swiper。
 
 ## 发布npm包
 

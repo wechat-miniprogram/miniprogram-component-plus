@@ -7,6 +7,8 @@
     "vtabs": "./vtabs/index",
     "vtabs-content": "./vtabs-content/index",
     "sticky": "./sticky/index",
-    "select-text": "./select-text/index"
+    "select-text": "./select-text/index",
+    "col": "./col/index",
+    "row": "./row/index"
   }
 }

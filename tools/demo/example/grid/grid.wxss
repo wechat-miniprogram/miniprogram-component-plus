@@ -1,0 +1,14 @@
+.col-gray {
+    background-color: #f2f2f2;
+}
+.col {
+    height:100px;
+    margin: 10px;
+    background-color: #f2f2f2;
+    border: 1px solid #555050;
+}
+
+.page__desc {
+    margin-left: 12px;
+    color: black;
+}
