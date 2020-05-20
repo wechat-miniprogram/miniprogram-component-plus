@@ -16,9 +16,9 @@
 | offset           | number      | 0     | 否   | 距 row 左侧偏移margin 距离|
 | push           | number      | 0     | 否   | 距左侧偏移的单位距离|
 | pull           | number      | 0     | 否   | 距右侧偏移的单位距离|
-| xs           | `number | Object<span,offset>`     |      | 否   | 当屏幕 < 768px 时，对应显示的网格规则。例如 xs="{{2}}" 或 xs="{{ {{span:24, offset: 0}} }}"|
-| sm           | `number | Object<span,offset>`      |      | 否   | 当屏幕 >= 768px, <992px，对应显示的网格规则。|
-| md           | `number | Object<span,offset>`      |      | 否   | 当屏幕 >= 992px, <1200px，对应显示的网格规则。|
-| lg           | `number | Object<span,offset>`      |      | 否   | 当屏幕 >= 1200px, <1920px 时，对应显示的网格规则。|
-| xl           | `number | Object<span,offset>`      |      | 否   | 当屏幕 >= 1920px 时，对应显示的网格规则。|
+| xs           | `number|Object<span,offset>`     |      | 否   | 当屏幕 < 768px 时，对应显示的网格规则。例如 xs="{{2}}" 或 xs="{{ {{span:24, offset: 0}} }}"|
+| sm           | `number|Object<span,offset>`      |      | 否   | 当屏幕 >= 768px, <992px，对应显示的网格规则。|
+| md           | `number|Object<span,offset>`      |      | 否   | 当屏幕 >= 992px, <1200px，对应显示的网格规则。|
+| lg           | `number|Object<span,offset>`      |      | 否   | 当屏幕 >= 1200px, <1920px 时，对应显示的网格规则。|
+| xl           | `number|Object<span,offset>`      |      | 否   | 当屏幕 >= 1920px 时，对应显示的网格规则。|
 
