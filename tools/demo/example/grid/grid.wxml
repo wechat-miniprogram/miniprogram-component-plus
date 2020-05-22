@@ -31,19 +31,19 @@
     <view class="page__desc">响应式布局, 大屏 3 列布局，手机端单列布局</view>
     <view>
       <mp-row>
-        <mp-col span="{{8}}" xs="{{24}}">
+        <mp-col md="{{8}}" xs="{{24}}">
           <view>
               <view class="col">
               </view>
             </view>
         </mp-col>
-        <mp-col span="{{8}}" xs="{{24}}">
+        <mp-col md="{{8}}" xs="{{24}}">
           <view>
               <view class="col">
               </view>
             </view>
         </mp-col>
-        <mp-col span="{{8}}" xs="{{24}}">
+        <mp-col md="{{8}}" xs="{{24}}">
           <view>
               <view class="col">
               </view>
@@ -62,6 +62,27 @@
           </view>
         </mp-col>
         <mp-col span="{{10}}" xs="{{24}}">
+          <view>
+              <view class="col">
+              </view>
+          </view>
+        </mp-col>
+      </mp-row>
+    </view>
+
+
+    <view class="page__desc">响应式 push/pull 布局，大屏右置，小屏居中</view>
+    <view>
+      <mp-row>
+        <mp-col xs="{{ {span:24, push:0} }}"  md="{{ {span:12, push: 12} }}">
+          <view>
+              <view class="col">
+              </view>
+          </view>
+        </mp-col>
+      </mp-row>
+      <mp-row>
+        <mp-col xs="{{24}}" md="{{12}}">
           <view>
               <view class="col">
               </view>

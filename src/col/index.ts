@@ -114,6 +114,8 @@ Component({
           classList.push(`weui-col-${screen}-${this.data[screen]}`)
         } else if (typeof this.data[screen] === 'object') {
           typeof this.data[screen].offset === 'number' && classList.push(`weui-col-${screen}-offset-${this.data[screen].offset}`)
+          typeof this.data[screen].push === 'number' && classList.push(`weui-col-${screen}-push-${this.data[screen].push}`)
+          typeof this.data[screen].pull === 'number' && classList.push(`weui-col-${screen}-pull-${this.data[screen].pull}`)
           typeof this.data[screen].span === 'number' && classList.push(`weui-col-${screen}-${this.data[screen].span}`)
         }
       }
