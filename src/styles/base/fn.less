@@ -2,10 +2,11 @@
 
   
 
-.genCol(@counter, @screen) when(@counter >= 0) {
+.genCol(@counter, @screen) when(@counter > 0) {
     .weui-col-@{screen}-@{counter} {
         width: (1 / 24 * @counter * 100) * 1%;
         float: left;
+        display: block;
     }
     .weui-col-@{screen}-offset-@{counter} {
         margin-left: (1 / 24 * @counter * 100) * 1%;
@@ -25,10 +26,11 @@
     .genCol(@counter - 1, @screen)
 }
 
-.genColPlain(@counter) when(@counter >= 0) {
+.genColPlain(@counter) when(@counter > 0) {
     .weui-col-@{counter} {
         width: (1 / 24 * @counter * 100) * 1%;
         float: left;
+        display: block;
     }
     .weui-col-offset-@{counter} {
         margin-left: (1 / 24 * @counter * 100) * 1%;
