@@ -77,5 +77,6 @@
     "vinyl": "^2.2.0",
     "webpack": "^4.29.5",
     "webpack-node-externals": "^1.7.2"
-  }
+  },
+  "dependencies": {}
 }
