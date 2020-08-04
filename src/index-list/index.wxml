@@ -15,7 +15,7 @@
       <view class="index-group__list">
         <block wx:for="{{item.subItems}}" wx:for-item="subItem" wx:key="name">
           <view 
-            class="index-group__item thin-border-bottom" 
+            class="index-group__item thin-border-bottom {{subItem.style}}" 
             hover-class="bg-highlight" 
             data-item="{{subItem}}"
             bindtap="choose">

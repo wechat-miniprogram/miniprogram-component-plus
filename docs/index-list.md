@@ -6,7 +6,7 @@
 
 | 属性       | 类型            | 默认值 | 必填 | 说明                                  |
 | ---------- | --------------- | ------ | ---- | ------------------------------------- |
-| list       | Array<listItem> | []     | 是   | 列表数据                              |
+| list       | Array\<listItem> | []     | 是   | 列表数据                              |
 | vibrated   | boolean         | true   | 否   | 索引上滑动时是否产生振动，仅 iOS 生效 |
 | bindchoose | eventhandle     |      |   否   | 选择列表项, e.detail={name}           |
 
@@ -15,13 +15,21 @@
 | 属性     | 类型           | 说明         |
 | -------- | -------------- | ------------ |
 | alpha    | string         | 首字母(大写) |
-| subItems | Array<subItem> | 子元素集合   |
+| subItems | Array\<subItem> | 子元素集合   |
 
 ### subItem 属性列表
 
-| 属性 | 类型   | 说明 |
-| ---- | ------ | ---- |
-| name | string | 名称 |
+| 属性 | 类型   | 必填 | 说明 |
+| ---- | ------ | -- | ---- |
+| name | string | 是 | 名称 |
+| style | string | 否 | 样式 |
+
+### style 的合法值
+
+| 属性 | 类型                   |
+| ---- | ---------------------- |
+| selected | 高亮该条目   |
+| disabled | 将该条目置为不可用状态 |       |
 
 ### 注意事项
 
