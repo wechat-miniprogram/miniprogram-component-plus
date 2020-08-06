@@ -4,7 +4,6 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
@@ -13,7 +12,6 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.9.4",
-	"appid": "wxe0b5580bba739b69",
 	"projectname": "小程序拓展组件库",
 	"isGameTourist": false,
 	"condition": {

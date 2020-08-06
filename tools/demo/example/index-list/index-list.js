@@ -3,6 +3,9 @@ const QQMapKey = 'NDLBZ-4Y6KF-S2LJ6-NAOAA-BOW56-LMB44'
 const qqmapsdk = new QQMapWX({ key: QQMapKey })
 
 Page({
+  data:{
+    select:false
+  },
   onLoad() {
     this.getCitys()
   },
@@ -10,7 +13,14 @@ Page({
   onChoose(e) {
     console.log('onChoose', e)
   },
-
+  onSelect(e) {
+    console.log('onSelect', e)
+  },
+  onTap(e) {
+    this.setData({
+      select:!this.data.select
+    })
+  },
   getCitys() {
     const _this = this
     qqmapsdk.getCityList({

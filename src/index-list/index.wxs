@@ -1,0 +1,34 @@
+module.exports.toggle =function (event,instance) {
+    //instance.getDataset().selecting&&
+    var dataset= event.target.dataset
+    var item = dataset.item
+    var curInst = event.instance
+    if(!item.disabled&&dataset.selecting){
+        if(curInst.hasClass('selected')){
+            curInst.removeClass('selected')
+            instance.callMethod('choose',{
+                item:item,
+                selected:true
+            });
+        }else{
+            curInst.addClass('selected')
+            instance.callMethod('choose',{
+                item:item,
+                selected:false
+            });
+        }
+    }
+}
+
+module.exports.init = function (newValue,oldValue,hostInst,inst) {
+    var item = inst.getDataset().item
+    if(item.disabled){
+        inst.addClass('disabled')
+    }else{
+        if(newValue&&item.selected){
+            inst.addClass('selected')
+        }else{
+            inst.removeClass('selected')
+        }
+    }
+}

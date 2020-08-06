@@ -48,7 +48,7 @@ Component({
             observer: function(newVal) {
                 if (newVal.length === 0) return
                 const data: any = this.data
-                const alphabet = data.list.map(item => item.alpha)
+                const alphabet:Array<any> = data.list.map(item => item.alpha)
                 this.setData({
                     alphabet, 
                     current: alphabet[0]
@@ -61,6 +61,17 @@ Component({
         vibrated: {
             type: Boolean,
             value: true
+        },
+        selecting: {
+            type: Boolean,
+            value: false,
+            observer: function (newVal:Boolean) {
+                if (newVal){
+                    this.data.selected = [];
+                }else{
+                    this.triggerEvent('select',{selected:this.data.selected})
+                }
+            }
         }
         
     },
@@ -70,6 +81,7 @@ Component({
         intoView: '',
         touching: false,
         alphabet: [],
+        selected: [],
         _tops: [],
         _anchorItemH: 0,
         _anchorItemW: 0,
@@ -88,9 +100,19 @@ Component({
         }
     },
     methods: {
-        choose(e) {
-            const item = e.target.dataset.item
-            this.triggerEvent('choose', {item})
+        choose(item:{item:subItem,selected:boolean}) {
+            //let item = e.target.dataset.item
+            let selected:Array<subItem> = this.data.selected
+            const curItem = selected.findIndex((v)=> v.name==item.item.name)
+            
+            if(item.selected){
+                selected.splice(curItem,1);
+            }else{
+                if(curItem<0){
+                    selected.push(item.item);
+                }
+            }
+            this.triggerEvent('choose', {item:item.item})
         },
         scrollTo(e) {
             this.__scrollTo(e)
@@ -158,3 +180,12 @@ Component({
         }
     }
 })
+
+interface subItem{
+    name:string,
+    style:"selected"|"disabled"|""
+}
+interface listItem{
+    alpha:string,
+    subItems:Array<subItem>
+}
