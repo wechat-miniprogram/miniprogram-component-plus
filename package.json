@@ -44,7 +44,6 @@
   "devDependencies": {
     "@commitlint/cli": "^8.2.0",
     "@commitlint/config-conventional": "^8.2.0",
-    "@tencent/tslint-config-wxapp": "0.0.2",
     "autoprefixer": "^6.5.1",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
