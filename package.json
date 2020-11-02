@@ -42,8 +42,10 @@
     }
   },
   "devDependencies": {
+    "@babel/runtime": "^7.12.1",
     "@commitlint/cli": "^8.2.0",
     "@commitlint/config-conventional": "^8.2.0",
+    "@types/wechat-miniprogram": "^3.0.0",
     "autoprefixer": "^6.5.1",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
@@ -75,6 +77,7 @@
     "typescript": "^3.3.3333",
     "vinyl": "^2.2.0",
     "webpack": "^4.29.5",
-    "webpack-node-externals": "^1.7.2"
+    "webpack-node-externals": "^1.7.2",
+    "weui-wxss": "^2.4.0"
   }
 }

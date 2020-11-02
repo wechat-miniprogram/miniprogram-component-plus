@@ -1,13 +1,30 @@
 {
+    "extends": "./tsconfig.base.json",
+
     "compilerOptions": {
-        "module": "commonjs",
-        "noImplicitAny": false,
-        "removeComments": true,
-        "target": "es2017",
-        "lib": ["es6", "es7", "dom"],
-        "preserveConstEnums": true,
-        "sourceMap": true,
-        "allowSyntheticDefaultImports": true
+      "baseUrl": ".",
+      "paths": {
+        "@miniprogram-component-plus/behaviors/*": ["packages/behaviors/*"],
+        "@miniprogram-component-plus/emoji": ["packages/emoji/src/index"],
+        "@miniprogram-component-plus/emoji/*": ["packages/emoji/src/*"],
+        "@miniprogram-component-plus/index-list": ["packages/index-list/src/index"],
+        "@miniprogram-component-plus/index-list/*": ["packages/index-list/src/*"],
+        "@miniprogram-component-plus/select-text": ["packages/select-text/src/index"],
+        "@miniprogram-component-plus/select-text/*": ["packages/select-text/src/*"],
+        "@miniprogram-component-plus/sticky": ["packages/sticky/src/index"],
+        "@miniprogram-component-plus/sticky/*": ["packages/sticky/src/*"],
+        "@miniprogram-component-plus/tabs": ["packages/tabs/src/index"],
+        "@miniprogram-component-plus/tabs/*": ["packages/tabs/src/*"],
+        "@miniprogram-component-plus/utils": ["packages/utils/src/index"],
+        "@miniprogram-component-plus/utils/*": ["packages/utils/src/*"],
+        "@miniprogram-component-plus/video-swiper": ["packages/video-swiper/src/index"],
+        "@miniprogram-component-plus/video-swiper/*": ["packages/video-swiper/src/*"],
+        "@miniprogram-component-plus/vtabs": ["packages/vtabs/src/index"],
+        "@miniprogram-component-plus/vtabs/*": ["packages/vtabs/src/*"],
+        "@miniprogram-component-plus/vtabs-content": ["packages/vtabs-content/src/index"],
+        "@miniprogram-component-plus/vtabs-content/*": ["packages/vtabs-content/src/*"]
+      }
     },
-    "include": ["src/**/*.ts", "node_modules/miniprogram-api-typings/index.d.ts"]
-}
+
+    "include": ["./typings", "**/*.ts"]
+  }

@@ -13,3 +13,4 @@ miniprogram_dev
 miniprogram_npm
 node_modules
 coverage
+dist

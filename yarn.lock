@@ -206,6 +206,11 @@
   resolved "https://registry.npmjs.org/@types/parse-json/-/parse-json-4.0.0.tgz#2f8bb441434d163b35fb8ffdccd7138927ffb8c0"
   integrity sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==
 
+"@types/wechat-miniprogram@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.npmjs.org/@types/wechat-miniprogram/-/wechat-miniprogram-3.0.0.tgz#401d0bf4f437dd9463e8ca99209e4742302d1e54"
+  integrity sha512-T30UPtyzFXk3hqsUKNqe1exODND1+snpH7S0fDBHLXVDGAuJGKsH8nXp83OfLEOak82Rn7w0uctwUxraC9XjAQ==
+
 "@webassemblyjs/ast@1.9.0":
   version "1.9.0"
   resolved "https://registry.npmjs.org/@webassemblyjs/ast/-/ast-1.9.0.tgz#bd850604b4042459a5a41cd7d338cbed695ed964"

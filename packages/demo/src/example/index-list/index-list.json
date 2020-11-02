@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "mp-indexList": "@miniprogram-component-plus/index-list"
+  }
+}
