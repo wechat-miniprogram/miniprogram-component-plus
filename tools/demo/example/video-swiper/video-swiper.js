@@ -1,37 +1,38 @@
 const urls = [
-  'http://1252076676.vod2.myqcloud.com/d7eee309vodgzp1252076676/2dbe7eca5285890794073052281/447nYOh5H2IA.mp4',
-  'http://1252076676.vod2.myqcloud.com/d7eee309vodgzp1252076676/302875785285890794073167099/HhGL7OJObiYA.mp4',
-  'http://1252076676.vod2.myqcloud.com/d7eee309vodgzp1252076676/30287db75285890794073167278/WVQpwkgnb9EA.mp4',
-  'http://1252076676.vod2.myqcloud.com/d7eee309vodgzp1252076676/320e66af5285890794073202694/8ksYlGUevogA.mp4',
-  'http://1252076676.vod2.myqcloud.com/d7eee309vodgzp1252076676/30010ead5285890794073141537/DGAx2EgLMEYA.mp4',
-  'http://1252076676.vod2.myqcloud.com/d7eee309vodgzp1252076676/320ed9255285890794073203062/JyqT3zzDH4MA.mp4',
-  'http://1252076676.vod2.myqcloud.com/d7eee309vodgzp1252076676/320ee16a5285890794073203247/okwtzftAVuwA.mp4',
-  'http://1252076676.vod2.myqcloud.com/d7eee309vodgzp1252076676/2fcc59275285890794073114126/ySa5LZ3k4EcA.mp4'
+  'https://res.wx.qq.com/wxaliveplayer/htdocs/video14e1eea.mov',
+  'https://res.wx.qq.com/wxaliveplayer/htdocs/video24e1eeb.mov',
+  'https://res.wx.qq.com/wxaliveplayer/htdocs/video34e1eeb.mov',
+  'https://res.wx.qq.com/wxaliveplayer/htdocs/video44e1eeb.mov',
+  'https://res.wx.qq.com/wxaliveplayer/htdocs/video54e1eeb.mov',
 ]
 
-const videoList = urls.map((url, index) => ({ id: index + 1, url }))
+const videoList = urls.map((url, index) => ({
+  id: index + 1,
+  url,
+  objectFit: 'contain'
+}))
 Page({
   data: {
-    videoList
+    videoList,
   },
 
-  onPlay(e) {},
+  onPlay() {},
 
-  onPause(e) {
+  onPause() {
     //  console.log('pause', e.detail.activeId)
   },
 
-  onEnded(e) {},
+  onEnded() {},
 
-  onError(e) {},
+  onError() {},
 
-  onWaiting(e) {},
+  onWaiting() {},
 
-  onTimeUpdate(e) {},
+  onTimeUpdate() {},
 
-  onProgress(e) {},
+  onProgress() {},
 
   onLoadedMetaData(e) {
     console.log('LoadedMetaData', e)
-  }
+  },
 })
