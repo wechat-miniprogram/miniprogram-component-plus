@@ -113,7 +113,7 @@ Component({
             const query = this.createSelectorQuery()
             query.selectAll('.index_list_item').boundingClientRect(rects => {
                 const result: any = rects
-                data._tops = result.map(item => item.top)
+                data._tops = result.map(item => Math.floor(item.top))
             }).exec()
             // 计算右侧字母栏小区块的高度等信息
             query.select('.anchor-list').boundingClientRect(rect => {
