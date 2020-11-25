@@ -1,0 +1,19 @@
+{
+  "name": "@miniprogram-component-plus/katex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "miniprogram_dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "katex",
+    "latex",
+    "miniprogram"
+  ],
+  "author": "chyizheng",
+  "license": "ISC",
+  "devDependencies": {
+    "katex": "^0.12.0"
+  }
+}

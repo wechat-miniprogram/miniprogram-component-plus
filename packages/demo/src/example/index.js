@@ -21,6 +21,7 @@ Page({
           'vtabs',
           'sticky',
           'select-text',
+          'katex',
         ],
       },
     ],

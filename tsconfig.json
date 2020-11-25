@@ -22,7 +22,9 @@
         "@miniprogram-component-plus/vtabs": ["packages/vtabs/src/index"],
         "@miniprogram-component-plus/vtabs/*": ["packages/vtabs/src/*"],
         "@miniprogram-component-plus/vtabs-content": ["packages/vtabs-content/src/index"],
-        "@miniprogram-component-plus/vtabs-content/*": ["packages/vtabs-content/src/*"]
+        "@miniprogram-component-plus/vtabs-content/*": ["packages/vtabs-content/src/*"],
+        "@miniprogram-component-plus/katex": ["packages/katex/src/index"],
+        "@miniprogram-component-plus/katex/*": ["packages/katex/src/*"]
       }
     },
 

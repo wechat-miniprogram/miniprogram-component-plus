@@ -7,7 +7,8 @@
     "example/tabs/tabs",
     "example/vtabs/vtabs",
     "example/sticky/sticky",
-    "example/select-text/select-text"
+    "example/select-text/select-text",
+    "example/katex/katex"
   ],
   "window": {
     "navigationBarTextStyle": "black",

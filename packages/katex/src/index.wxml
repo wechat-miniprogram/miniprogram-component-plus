@@ -1,0 +1,1 @@
+<rich-text class="{{extClass}}" nodes="{{katexHtml}}"></rich-text>

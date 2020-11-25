@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "m-katex": "@miniprogram-component-plus/katex"
+  }
+}
