@@ -35,13 +35,18 @@ Component({
 
   observers: {
     disabled: function(newVal) {
-      if (!this._attached) return
+      if (!this.data._attached) return
       newVal ? this.disconnectObserver() : this.initObserver()
     },
 
     container: function(newVal) {
       if (typeof newVal !== 'function' || !this.data.height) return
       this.observerContainer()
+    },
+
+    offsetTop: function(newVal){
+      if(typeof newVal !== 'number' || !this.data._attached) return
+      this.initObserver()
     }
     
   },

@@ -7,7 +7,7 @@ Page({
     focus: false,
     cursor: 0,
     _keyboardShow: false,
-    emojiSource: '',
+    emojiSource: 'https://res.wx.qq.com/op_res/eROMsLpnNC10dC40vzF8qviz63ic7ATlbGg20lr5pYykOwHRbLZFUhgg23RtVorX',
     parsedComment: []
   },
 
