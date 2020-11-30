@@ -1,0 +1,95 @@
+<view class="page">
+  <view class="page__hd">
+      <view class="page__title">响应式布局</view>
+      <view class="page__desc">为了适配小程序在 PC/IPad 上运行，提供响应式适配组件</view>
+  </view>
+  <view class="page__bd">
+    <view class="page__desc">三列均分布局</view>
+    <view>
+        <mp-row>
+          <mp-col span="{{8}}">
+            <view>
+              <view class="col">
+              </view>
+            </view>
+          </mp-col>
+          <mp-col span="{{8}}">
+            <view>
+              <view class="col">
+              </view>
+            </view>
+          </mp-col>
+          <mp-col span="{{8}}">
+            <view>
+              <view class="col">
+              </view>
+            </view>
+          </mp-col>
+        </mp-row>
+    </view>
+
+    <view class="page__desc">响应式布局, 大屏 3 列布局，手机端单列布局</view>
+    <view>
+      <mp-row>
+        <mp-col md="{{8}}" xs="{{24}}">
+          <view>
+              <view class="col">
+              </view>
+            </view>
+        </mp-col>
+        <mp-col md="{{8}}" xs="{{24}}">
+          <view>
+              <view class="col">
+              </view>
+            </view>
+        </mp-col>
+        <mp-col md="{{8}}" xs="{{24}}">
+          <view>
+              <view class="col">
+              </view>
+          </view>
+        </mp-col>
+      </mp-row>
+    </view>
+
+    <view class="page__desc">响应式布局，大屏两列居中，小屏单列布局</view>
+    <view>
+      <mp-row>
+        <mp-col span="{{10}}" offset="{{2}}" xs="{{ {span:24, offset: 0} }}">
+          <view>
+              <view class="col">
+              </view>
+          </view>
+        </mp-col>
+        <mp-col span="{{10}}" xs="{{24}}">
+          <view>
+              <view class="col">
+              </view>
+          </view>
+        </mp-col>
+      </mp-row>
+    </view>
+
+
+    <view class="page__desc">响应式 push/pull 布局，大屏右置，小屏居中</view>
+    <view>
+      <mp-row>
+        <mp-col xs="{{ {span:24, push:0} }}"  md="{{ {span:12, push: 12} }}">
+          <view>
+              <view class="col">
+              </view>
+          </view>
+        </mp-col>
+      </mp-row>
+      <mp-row>
+        <mp-col xs="{{24}}" md="{{12}}">
+          <view>
+              <view class="col">
+              </view>
+          </view>
+        </mp-col>
+      </mp-row>
+    </view>
+
+  </view>
+</view>

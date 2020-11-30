@@ -1,0 +1,99 @@
+@import "./var";
+
+  
+
+.genCol(@counter, @screen) when(@counter > 0) {
+    .weui-col-@{screen}-@{counter} {
+        width: (1 / 24 * @counter * 100) * 1%;
+        float: left;
+        display: block;
+    }
+    .weui-col-@{screen}-offset-@{counter} {
+        margin-left: (1 / 24 * @counter * 100) * 1%;
+    }
+
+    // add push/pull
+    .weui-col-@{screen}-pull-@{counter} {
+        position: relative;
+        right: (1 / 24 * @counter * 100) * 1%;
+    }
+
+    .weui-col-@{screen}-push-@{counter} {
+        position: relative;
+        left: (1 / 24 * @counter * 100) * 1%;
+    }
+
+    .genCol(@counter - 1, @screen)
+}
+
+.genCol(@counter, @screen) when (@counter = 0) {
+    .weui-col-@{screen}-@{counter} {
+        display: none;
+    }
+
+    .weui-col-@{screen}-offset-@{counter} {
+        margin-left: (1 / 24 * @counter * 100) * 1%;
+    }
+
+    // add push/pull
+    .weui-col-@{screen}-pull-@{counter} {
+        position: relative;
+        right: (1 / 24 * @counter * 100) * 1%;
+    }
+
+    .weui-col-@{screen}-push-@{counter} {
+        position: relative;
+        left: (1 / 24 * @counter * 100) * 1%;
+    }
+}
+
+.genColPlain(@counter) when(@counter > 0) {
+    .weui-col-@{counter} {
+        width: (1 / 24 * @counter * 100) * 1%;
+        float: left;
+        display: block;
+    }
+    .weui-col-offset-@{counter} {
+        margin-left: (1 / 24 * @counter * 100) * 1%;
+    }
+    // add push/pull for plain col
+    .weui-col-pull-@{counter} {
+        position: relative;
+        right: (1 / 24 * @counter * 100) * 1%;
+    }
+
+    .weui-col-push-@{counter} {
+        position: relative;
+        left: (1 / 24 * @counter * 100) * 1%;
+    }
+
+    // 默认还会执行 .genColPlain(0)
+    .genColPlain(@counter - 1)
+}
+
+.genColPlain(@counter) when(@counter = 0) {
+    .weui-col-@{counter} {
+        display: none;
+    }
+    .weui-col-offset-@{counter} {
+        margin-left: (1 / 24 * @counter * 100) * 1%;
+    }
+    // add push/pull for plain col
+    .weui-col-pull-@{counter} {
+        position: relative;
+        right: (1 / 24 * @counter * 100) * 1%;
+    }
+
+    .weui-col-push-@{counter} {
+        position: relative;
+        left: (1 / 24 * @counter * 100) * 1%;
+    }
+}
+
+
+// add media query
+.addMediaQuery(@screen, @maxWidth) {
+    @media screen and (max-width: @maxWidth) {
+        .genCol(24, @screen)
+    }
+}
