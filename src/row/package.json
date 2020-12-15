@@ -1,0 +1,16 @@
+{
+    "name": "@miniprogram-component-plus/row",
+    "version": "1.0.0",
+    "description": "",
+    "main": "miniprogram_dist/index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+      "row",
+      "miniprogram"
+    ],
+    "author": "villainhr",
+    "license": "ISC"
+  }
+  

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "mp-col": "../../components/col/index",
+    "mp-row": "../../components/row/index"
+  }
+}
