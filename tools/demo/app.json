@@ -2,7 +2,6 @@
   "pages": [
     "example/index",
     "example/video-swiper/video-swiper",
-    "example/emoji/emoji",
     "example/index-list/index-list",
     "example/tabs/tabs",
     "example/vtabs/vtabs",
