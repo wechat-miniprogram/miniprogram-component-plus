@@ -9,16 +9,19 @@
   <view>
     <slot></slot>
   </view>
+  <wxs module="index" src="./index.wxs"></wxs>
   <view class="index_list_item" wx:for="{{list}}" wx:key="alpha" id="{{item.alpha}}">
     <view class="index-group__title font-size-26 tips-color">{{item.alpha}}</view>
     <view class="index-group__content">
       <view class="index-group__list">
         <block wx:for="{{item.subItems}}" wx:for-item="subItem" wx:key="name">
           <view 
-            class="index-group__item thin-border-bottom" 
+            class="index-group__item thin-border-bottom {{subItem.style}}" 
             hover-class="bg-highlight" 
+            data-selecting="{{selecting}}"
+            change:data-selecting="{{index.init}}"
             data-item="{{subItem}}"
-            bindtap="choose">
+            bindtap="{{index.toggle}}">
               {{subItem.name}}
           </view>
         </block>
